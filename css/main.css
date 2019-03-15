@@ -7,7 +7,7 @@ body {
     grid-template-areas: 'x y y y y' 'x c c c w' 'x c c c w' 'x z z z z';
     grid-gap: 15px;
     grid-template-columns: 300px auto auto auto 200px;
-    grid-template-rows: 50px auto auto 80px;
+    grid-template-rows: 70px auto auto 80px;
 }
 
 body > * {
@@ -37,4 +37,39 @@ body > * {
     animation-name: animacija;
     animation-duration: 3s;
     animation-iteration-count: infinite;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+.rek_lama {
+    margin: 20px 0;
+}
+
+img[alt="Tautvydas Dulskis"] {
+    float: left;
+    margin-right: 20px;
+}
+
+@keyframes meniu_in {
+    from{color: green}
+    to{color: lightgreen}
+}
+@keyframes meniu_out {
+    from{color: lightgreen}
+    to{color: green}
+}
+
+nav li a {
+    font-size: 24px;
+    text-decoration: none;
+    color: green;
+    animation-name: meniu_out;
+    animation-duration: 1s;
+}
+nav li a:hover {
+    animation-name: meniu_in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }

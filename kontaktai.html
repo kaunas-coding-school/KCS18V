@@ -1,31 +1,62 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>Kontaktai</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <meta charset="UTF-8">
 </head>
 <body>
-<form action="Saugoti.php" method="get">
-    <input name="firstname" type="text" id="fn" placeholder="Vardas"/>
-    <hr>
-    <label for="ln">Pavarde</label>
-    <input name="lastname" type="text" id="ln" value="Pavardenis"/>
-    <hr>
-    <label for="masina">Automobilis</label>
-    <select name="cars" id="masina">
-        <option value="volvo">Volvo</option>
-        <option value="2">Saab</option>
-        <option value="kkk" selected>Fiat</option>
-        <option value="audi">Audi</option>
-    </select>
-    <hr>
-    <label for="zinute">Tavo Zinute man</label>
-    <textarea name="message" rows="10" cols="30" id="zinute">
+<div style="grid-area: x">
+    <nav>
+        <ul>
+            <li><a href="/">Pradžia</a></li>
+            <li><a href="/portfolio.html">Portfolio</a></li>
+            <li><a href="/kontaktai.html">Kontaktai</a></li>
+        </ul>
+    </nav>
+    <div class="rek_lama">
+        <img src="https://dummyimage.com/278x150/7a7a7a/0011ff.png&text=Reklama" alt="Reklama">
+    </div>
+</div>
+<header style="grid-area: y">
+    <h1>www.kcs18v.lt</h1>
+</header>
+<footer style="grid-area: z">Visos teisės saugomos &copy;</footer>
+<aside style="grid-area: w">
+    <div class="rek_lama">
+        <img src="https://dummyimage.com/178x178/7a7a7a/0011ff.png&text=Reklama" alt="Reklama">
+    </div>
+    <div class="rek_lama">
+        <img src="https://dummyimage.com/178x178/7a7a7a/0011ff.png&text=Reklama" alt="Reklama">
+    </div>
+</aside>
+<main style="grid-area: c">
+    <form action="Saugoti.php" method="get">
+        <input name="firstname" type="text" id="fn" placeholder="Vardas"/>
+        <hr>
+        <label for="ln">Pavarde</label>
+        <input name="lastname" type="text" id="ln" value="Pavardenis"/>
+        <hr>
+        <label for="masina">Automobilis</label>
+        <select name="cars" id="masina">
+            <option value="volvo">Volvo</option>
+            <option value="2">Saab</option>
+            <option value="kkk" selected>Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+        <hr>
+        <label for="zinute">Tavo Zinute man</label>
+        <textarea name="message" rows="10" cols="30" id="zinute">
     The cat was playing in the garden.
     </textarea>
-    <hr>
+        <hr>
 
-    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
-    <input type="submit" value="Saugoti" />
+        <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+        <input type="submit" value="Saugoti" />
 
-</form>
+    </form>
+</main>
+
 </body>
 </html>
