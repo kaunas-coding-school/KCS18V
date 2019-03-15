@@ -1,0 +1,40 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 'x y y y y' 'x c c c w' 'x c c c w' 'x z z z z';
+    grid-gap: 15px;
+    grid-template-columns: 300px auto auto auto 200px;
+    grid-template-rows: 50px auto auto 80px;
+}
+
+body > * {
+    padding: 10px;
+    border: 1px solid red;
+}
+
+@keyframes animacija {
+    0% {
+        background-color: blue;
+    }
+
+    30% {
+        background-color: red;
+    }
+
+    60% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: blue;
+    }
+}
+
+.turinys {
+    animation-name: animacija;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}

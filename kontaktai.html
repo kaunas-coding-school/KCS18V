@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Kontaktai</title>
+</head>
+<body>
+<form action="Saugoti.php" method="get">
+    <input name="firstname" type="text" id="fn" placeholder="Vardas"/>
+    <hr>
+    <label for="ln">Pavarde</label>
+    <input name="lastname" type="text" id="ln" value="Pavardenis"/>
+    <hr>
+    <label for="masina">Automobilis</label>
+    <select name="cars" id="masina">
+        <option value="volvo">Volvo</option>
+        <option value="2">Saab</option>
+        <option value="kkk" selected>Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+    <hr>
+    <label for="zinute">Tavo Zinute man</label>
+    <textarea name="message" rows="10" cols="30" id="zinute">
+    The cat was playing in the garden.
+    </textarea>
+    <hr>
+
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+    <input type="submit" value="Saugoti" />
+
+</form>
+</body>
+</html>
